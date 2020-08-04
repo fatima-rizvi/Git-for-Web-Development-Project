@@ -78,15 +78,42 @@ Link to finished code-pen: https://codepen.io/FatimaRizvi/pen/poyovpv
     Why do I have to be careful with this? 
         By using the command "rm". You have to be careful because there is no prompt asking if you're sure, and there is no way to recover the deleted file.
     34. Why should I use version control? 
-        Because it allows you to track each individual change.
+        Because it allows you to track each individual change. It makes it easier for multiple ocntributers to work tofether, and if an error is made then it allows the old code to still be accesible. 
     35. How often should I commit to github?
+        Often, about every 20 minutes.
     36. What is the command we would use to push our repo up to github? 
+        git push -u origin <branch-name>
     37. Walk me through Lambda's git flow. 
-
+            1. Fork your own copy of the repo.
+            2. Check to make sure that you properly forked it.
+            3. Add your TL as a collaborator on your forked repo.
+            4. CLone your repo using the clone button.
+            5. In the terminal, use the cd command to go to the directory where you want to store your cloned forked repo.
+            6. Use the command git clone <link-to-repo> to clone te repo to the directory you are currently in.
+            7. Use the cd <repo-name> command to enter your newly created repo
+            8. Use the command git checkout -b "firstname-lastname" to create your own branch name for the repo.
+            9. Work on the repo and complete the assignment.
+            10. Add and commit changes (in that order) often using the cokmmands "git add ." and "git commit -m "your helpful message here".
+            11. Push your changes back up to your Github repo using the command git push -u origin <branch-name>.
+            12. Submit a pull request on Github.
+                a. Go to your forked repo on Github and click the Branch:master button. From the drop down list, select the branch with your name.
+                b. CLick the your name branch and then click the New Pull Request button to make the pull request. YOu will be redirected to the pull request page.
+                c. Click the dropdown button that says base repository and CHANGE it to your forked repo instead of the Lambda one.
+                d. Add your TL to the Reviewers.
+                e. Fill out the form.
+            13. Once you are done click the Create pull request button.
+            14. DO NOT MERGE YOUR OWN PULL REQUEST
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+        Block elements always start on a new line and take up the full width that alloted to them, whereas inline elements do not start on a new line and they only take up the necessary space. An example of a block element is <p>. An example of an inline element is <img>.
     2. What happens when an element is positioned absolutely? 
+        Its position is then fixed and it sits on its own layer, unaffected by the flow of the rest of the document.
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        You can set the height to the maximum size you are willing to allow the element to take up and then set the elements width to auto.
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        Display block: <div>, <h1>, <header>
+        Display inline: <span>, <a>
+        Display inline-block: <button>
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        
